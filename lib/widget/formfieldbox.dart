@@ -44,7 +44,7 @@ class FormFieldBox extends StatelessWidget {
                   suffixi,
                 )),
             prefixIcon: IconButton(onPressed: () {}, icon: Icon(prefixi)),
-            hintText: "Enter UserName",
+            hintText: hinttext,
             hintStyle: kLoginTextfield,
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
