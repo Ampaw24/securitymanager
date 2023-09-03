@@ -32,12 +32,24 @@ class _LoginPageState extends State<LoginPage> {
                 Center(
                   child: Container(
                       margin: const EdgeInsets.only(top: 20),
-                      width: 190,
-                      height: 160,
+                      width: 130,
+                      height: 120,
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage("assets/logomain.png")))),
+                              image: AssetImage(
+                                  "assets/Accra Technical University.png")))),
+                ),
+                Center(
+                  child: Text(
+                    "SECURED GUARD APP",
+                    style: GoogleFonts.poppins(
+                      textStyle: kCompanyTitleText,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 CurledContainer(
                   topleft: 68,
@@ -70,7 +82,7 @@ class _LoginPageState extends State<LoginPage> {
                         height: 30,
                       ),
                       FormFieldBox(
-                         onChangedAction: (value) {
+                        onChangedAction: (value) {
                           mail = value;
                         },
                         prefixi: Icons.lock,
